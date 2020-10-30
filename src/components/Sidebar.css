@@ -1,0 +1,18 @@
+.sidebar__avatar {
+    height: 110px;
+    width: 120px;
+    object-fit: contain;
+}
+
+.sidebar__name {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.sidebar__item {
+    margin-bottom: 6px;
+    padding-top: 6px;
+    height: 40px;
+    font-size: 1.05rem;
+    background-color: wheat;
+}
