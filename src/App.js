@@ -1,18 +1,31 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./pages/HomePage/HomePage";
+import { Route, Redirect, Switch, useLocation } from "react-router-dom";
 function App() {
+  const location = useLocation();
   return (
-    <div className="App">
-      <div className="container navbar">
-        <div className="col-lg-12 navbar"> N A V B A R</div>
-      </div>
-      <div className="container">
-        <div className="row content">
-          <div className="col-lg-3 sidebar">
-            <Sidebar />
-          </div>
-          <div className="col-lg-9 test_box2">main</div>
-        </div>
+    <div className="box">
+      <Navbar />
+      <div className="col-sm-12 col-md-8 box2">
+        <Switch location={location} key={location.key}>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about">
+            <div>ABOUT</div>
+          </Route>
+          <Route path="/skill">
+            <div>SKILL</div>
+          </Route>
+          <Route path="/project">
+            <div>PROJECT</div>
+          </Route>
+          <Route path="/blog">
+            <div>BLOG</div>
+          </Route>
+          <Route>
+            <Redirect to="/" />
+          </Route>
+        </Switch>
       </div>
     </div>
   );

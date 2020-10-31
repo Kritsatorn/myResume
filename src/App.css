@@ -1,27 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 body {
-    background-color: #ECECEC;
-    font-family: 'Playfair Display', serif;
+    background-color: #ececec;
+    font-family: "Comfortaa", cursive;
 }
 
-.navbar {
-    height: 10vh;
-    background-color: black;
-    color: white;
+a:hover {
+    text-decoration: none;
 }
 
-.content {
-    height: 90vh;
+.box {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
-.sidebar {
-    background-color: #F3D250;
-    height: 100%;
-    padding: 25px 15px;
-    text-align: center;
-}
-
-.test_box2 {
-    background-color: #90CCF4;
-    padding: 25px 15px;
+.box2 {
+    background-color: #ffffff;
+    padding: 0;
 }

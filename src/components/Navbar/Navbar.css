@@ -1,0 +1,25 @@
+.box1 {
+    background-color: #cc4b2c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* up navbar item */
+    padding-bottom: 10rem;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; */
+}
+
+.navbar__item {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.navbar__header {
+    align-self: start;
+}

@@ -15,4 +15,5 @@
     height: 40px;
     font-size: 1.05rem;
     background-color: wheat;
+    color: var(--first--color);
 }
