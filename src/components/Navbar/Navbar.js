@@ -52,9 +52,9 @@ const Navbar = () => {
             <div className="navbar__item">BLOG</div>
           </Link>
         </motion.div>
-      ) : (
-        <div className="navbar__header">HeaderBar</div>
-      )}
+      ) : null
+      // <div className="navbar__header">HeaderBar</div>
+      }
     </>
   );
 };

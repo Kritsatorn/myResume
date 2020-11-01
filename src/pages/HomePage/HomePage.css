@@ -12,7 +12,7 @@
     width: 160px;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #CC4B2E;
+    background-color: #cc4b2e;
 }
 
 .home__pic>img {
@@ -22,7 +22,7 @@
 }
 
 .home__name {
-    color: #CC4B2E;
+    color: #cc4b2e;
     font-size: 2rem;
     font-weight: 900;
     margin-top: 1.5rem;
@@ -44,7 +44,7 @@
 
 .home__icons>a {
     display: flex;
-    color: #CC4B2E;
+    color: #cc4b2e;
     margin: 1rem;
 }
 
@@ -55,7 +55,7 @@ a:hover {
 
 .home_button {
     /* background-color: aqua; */
-    background-color: #CC4B2E;
+    background-color: #cc4b2e;
     border-radius: 30px;
     padding: 1rem 2rem;
     color: white;
