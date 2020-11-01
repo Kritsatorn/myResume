@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./Navbar.css";
 const Navbar = () => {
@@ -8,14 +9,33 @@ const Navbar = () => {
   mql.addListener(() => {
     setIsMobile(!mql.matches);
   });
-
+  const navbar_variant = {
+    hidden: {
+      y: "-30vh",
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.7,
+        type: "spring",
+      },
+    },
+  };
   useEffect(() => {
     console.log("HI : ", isMobile);
   }, []);
   return (
     <>
       {!isMobile ? (
-        <div className="col-md-4 box1">
+        <motion.div
+          className="col-md-4 box1"
+          variants={navbar_variant}
+          initial="hidden"
+          animate="visible"
+        >
           <Link to="/">
             <div className="navbar__item">HOME</div>
           </Link>
@@ -31,7 +51,7 @@ const Navbar = () => {
           <Link to="/blog">
             <div className="navbar__item">BLOG</div>
           </Link>
-        </div>
+        </motion.div>
       ) : (
         <div className="navbar__header">HeaderBar</div>
       )}
