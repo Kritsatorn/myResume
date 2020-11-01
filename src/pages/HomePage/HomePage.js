@@ -30,7 +30,9 @@ const HomePage = () => {
       <div className="home__pic">
         <img src={pic} alt="picture" />
       </div>
-      <div className="home__name">Kritsatorn Saegnweang</div>
+      <div className="home__name">
+        <span>Kritsatorn</span> <span>Saegnweang</span>
+      </div>
       <div className="home__subname">Frontend & A.I. Student</div>
       <div className="home__icons">
         <a href="!#">

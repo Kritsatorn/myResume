@@ -23,12 +23,9 @@
 
 .home__name {
     color: #cc4b2e;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home__subname {

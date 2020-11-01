@@ -6,14 +6,6 @@
     flex-direction: column;
     /* up navbar item */
     padding-bottom: 10rem;
-    z-index: 10;
-    position: fixed;
-    left: 0;
-    top: 0;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px; */
 }
 
 .navbar__item {
