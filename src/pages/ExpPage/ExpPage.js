@@ -1,12 +1,12 @@
 import React from "react";
 
-const SkillPage = () => {
+const ExpPage = () => {
   return (
     <div>
-      Skill
+      EXP
       <span>Page</span>
     </div>
   );
 };
 
-export default SkillPage;
+export default ExpPage;

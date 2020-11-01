@@ -28,7 +28,7 @@ const HomePage = () => {
       animate="visible"
     >
       <div className="home__pic">
-        <img src={pic} alt="picture" />
+        <img src={pic} alt="kritsatorn__picture" />
       </div>
       <div className="home__name">
         <span>Kritsatorn</span> <span>Saegnweang</span>

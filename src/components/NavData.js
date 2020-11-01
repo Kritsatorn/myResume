@@ -11,7 +11,7 @@ const NavData = () => {
         <div className="navbar__item">ABOUT</div>
       </Link>
       <Link to="/skill">
-        <div className="navbar__item">SKILL</div>
+        <div className="navbar__item">EXPERIENCE</div>
       </Link>
       <Link to="/project">
         <div className="navbar__item">PROJECT</div>

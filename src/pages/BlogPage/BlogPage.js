@@ -3,7 +3,7 @@ import React from "react";
 const BlogPage = () => {
   return (
     <div>
-      Project
+      Blog
       <span>Page</span>
     </div>
   );

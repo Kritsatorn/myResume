@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { motion } from "framer-motion";
 import NavData from "../NavData";
 import "./Navbar.css";
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(
-    /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-  );
+  // const [isMobile, setIsMobile] = useState(
+  //   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  // );
   const navbar_variant = {
     hidden: {
       y: "-30vh",
@@ -22,13 +21,13 @@ const Navbar = () => {
       },
     },
   };
-  useEffect(() => {
-    console.log("HI : ", isMobile);
-  }, [isMobile]);
+  // useEffect(() => {
+  //   console.log("HI : ", isMobile);
+  // }, [isMobile]);
   return (
     <>
       <motion.div
-        className="navbar__menu col-lg-4 d-none d-lg-flex"
+        className="navbar__menu col-lg-3 d-none d-lg-flex"
         variants={navbar_variant}
         initial="hidden"
         animate="visible"
