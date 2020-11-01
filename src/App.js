@@ -11,8 +11,9 @@ function App() {
   const location = useLocation();
   return (
     <div className="box">
-      <Navbar />
-      <div className="col-sm-12 col-md-8 box2">
+      <div className="box2">
+        <Navbar />
+
         {/* <AnimatePresence exitBeforeEnter> */}
         <Switch location={location} key={location.key}>
           <Route exact path="/" component={HomePage} />

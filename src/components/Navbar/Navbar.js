@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 
 import "./Navbar.css";
 const Navbar = () => {
-  const mql = global.matchMedia(`(min-width: 768px)`);
-  const [isMobile, setIsMobile] = useState(null);
-  mql.addListener(() => {
-    setIsMobile(!mql.matches);
-  });
+  const [isMobile, setIsMobile] = useState(
+    /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  );
   const navbar_variant = {
     hidden: {
       y: "-30vh",
@@ -26,12 +24,12 @@ const Navbar = () => {
   };
   useEffect(() => {
     console.log("HI : ", isMobile);
-  }, []);
+  }, [isMobile]);
   return (
     <>
-      {!isMobile ? (
+      {
         <motion.div
-          className="col-md-4 box1"
+          className="navbar__menu"
           variants={navbar_variant}
           initial="hidden"
           animate="visible"
@@ -52,8 +50,7 @@ const Navbar = () => {
             <div className="navbar__item">BLOG</div>
           </Link>
         </motion.div>
-      ) : null
-      // <div className="navbar__header">HeaderBar</div>
+        // <div className="navbar__header">HeaderBar</div>
       }
     </>
   );
