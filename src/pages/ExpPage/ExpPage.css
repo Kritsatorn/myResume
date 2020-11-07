@@ -43,6 +43,7 @@
     display: flex;
     /* justify-content: center; */
     overflow: hidden;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 400px;
@@ -58,6 +59,8 @@
     width: 100%;
     overflow: hidden;
     /* border-radius: 50%; */
+    position: relative;
+    border-radius: .5rem;
     background-color: white;
 }
 
@@ -65,4 +68,27 @@
     max-width: 120%;
     max-height: auto;
     display: block;
+}
+
+.exp__data {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 75, 44, .7);
+    transition: .3s;
+    z-index: 3;
+    color: white;
+}
+
+.exp__pic:hover .exp__data {
+    bottom: 0;
+}
+
+.exp__data-title {
+    font-size: 1.5rem;
 }
