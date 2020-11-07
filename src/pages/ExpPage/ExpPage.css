@@ -1,3 +1,7 @@
+.exp__body {
+    overflow: scroll;
+}
+
 .exp__navheader {
     height: 7vh;
     width: 100%;
